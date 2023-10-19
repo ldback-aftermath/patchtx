@@ -1,0 +1,15 @@
+[package]
+name = "patch_tx"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sui-types = { git = "https://github.com/MystenLabs/sui/", branch = "framework/testnet" }
+sui-sdk = { git = "https://github.com/MystenLabs/sui/",  branch = "framework/testnet" }
+
+bcs = "0.1.4"
+fastcrypto = { git = "https://github.com/MystenLabs/fastcrypto", rev = "59e15ab83999b464a6da37b6cdf0910fedd1216c" }
+clap = { version = "4.3.0", features = ["derive"] }
+tokio="1.28.1"
+anyhow="1.0.71"
+dirs = "5.0.0"
